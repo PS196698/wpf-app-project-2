@@ -1,0 +1,176 @@
+﻿<Window x:Class="wpf_app.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:wpf_app"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="afb/background.png" Opacity="0.4"></ImageBrush>
+        </Grid.Background>
+
+
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock Grid.Column="1" Grid.ColumnSpan="3"  FontSize="20" Foreground="Black">De Fluitende Fietser - Facturering</TextBlock>
+        <ProgressBar Grid.Column="0" Grid.Row="11" Grid.ColumnSpan="4"  x:Name="progressbar" ValueChanged="progressbar_ValueChanged"></ProgressBar>
+        <Image Grid.Column="0" Grid.Row="0" Source="afb/logo.png"></Image>
+
+        <ComboBox Grid.Column="1" Grid.Row="1"  SelectionChanged="combobox1_SelectionChanged" Name="ComboBox1">
+            <ComboBoxItem IsSelected="True">Kies je Fiets</ComboBoxItem>
+            <ComboBoxItem>Aanhangfiets</ComboBoxItem>
+            <ComboBoxItem>Bakfiets</ComboBoxItem>
+            <ComboBoxItem>Driewielfiets</ComboBoxItem>
+            <ComboBoxItem>Elektrischefiets</ComboBoxItem>
+            <ComboBoxItem>Kinderfiets</ComboBoxItem>
+            <ComboBoxItem>Ligfiets</ComboBoxItem>
+            <ComboBoxItem>Oma fiets</ComboBoxItem>
+            <ComboBoxItem>Racefiets</ComboBoxItem>
+            <ComboBoxItem>Speed pedelec</ComboBoxItem>
+            <ComboBoxItem>Stadsfiets</ComboBoxItem>
+            <ComboBoxItem>Vouwfiets</ComboBoxItem>
+            <ComboBoxItem>Zitfiets</ComboBoxItem>
+        </ComboBox>
+
+        <ComboBox Grid.Row="2" Grid.Column="1" SelectionChanged="combobox2_SelectionChanged" Name="ComboBox2">
+            <ComboBoxItem IsSelected="True">Kies je Verzekering</ComboBoxItem>
+            <ComboBoxItem>Beschadigingen</ComboBoxItem>
+            <ComboBoxItem>Diefstal</ComboBoxItem>
+            <ComboBoxItem>Rechtsbijstand</ComboBoxItem>
+            <ComboBoxItem>Ongevallen</ComboBoxItem>
+        </ComboBox>
+
+        <ComboBox Grid.Row="3" Grid.Column="1" SelectionChanged="combobox3_SelectionChanged" Name="ComboBox3">
+            <ComboBoxItem IsSelected="True">Kies je service</ComboBoxItem>
+            <ComboBoxItem>Ophaalservice</ComboBoxItem>
+            <ComboBoxItem>Regenpak</ComboBoxItem>
+            <ComboBoxItem>Lunchpakket basis</ComboBoxItem>
+            <ComboBoxItem>Lunchpakket Uitgebreid</ComboBoxItem>
+        </ComboBox>
+
+        <StackPanel Grid.Row="10" Grid.Column="2" Grid.ColumnSpan="2" Orientation="Horizontal">
+            <Button x:Name="bestellen" Width="200">Bestellen</Button>
+            <Button x:Name="Volgende_Klant" Content="Volgende Klant" Width="200"/>
+        </StackPanel>
+
+        <Grid Grid.Row="1" Grid.Column="0" Grid.RowSpan="10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+            </Grid.RowDefinitions>
+
+
+            <Image Grid.Column="0" Grid.Row="0" Source="/afb/5_cent.jpg"></Image>
+            <Image Grid.Column="0" Grid.Row="1" Source="/afb/10_cent.jpg"></Image>
+            <Image Grid.Column="0" Grid.Row="2" Source="/afb/50_cent.jpg"></Image>
+            <Image Grid.Column="0" Grid.Row="3" Source="/afb/1_euro.jpg"></Image>
+            <Image Grid.Column="0" Grid.Row="4" Source="/afb/2_euro.jpg"></Image>
+            <Image Grid.Column="0" Grid.Row="5" Source="/afb/5_euro.jpg"></Image>
+            <Image Grid.Column="0" Grid.Row="6" Source="/afb/10_euro.jpg"></Image>
+            <Image Grid.Column="0" Grid.Row="7" Source="/afb/50_euro.png"></Image>
+            <Image Grid.Column="0" Grid.Row="8" Source="/afb/100_euro.jpg"></Image>
+            <Image Grid.Column="0" Grid.Row="9" Source="/afb/200_euro.jpg"></Image>
+
+            <TextBox Name="mi1" TextChanged="moneyinput" Width="26" HorizontalAlignment="Left" Height="18" Grid.Column="1" Grid.Row="0" >0</TextBox>
+            <TextBox Name="mi2" TextChanged="moneyinput" Width="26" HorizontalAlignment="Left" Height="18" Grid.Column="1" Grid.Row="1" >0</TextBox>
+            <TextBox Name="mi3" TextChanged="moneyinput" Width="26" HorizontalAlignment="Left" Height="18" Grid.Column="1" Grid.Row="2" >0</TextBox>
+            <TextBox Name="mi4" TextChanged="moneyinput" Width="26" HorizontalAlignment="Left" Height="18" Grid.Column="1" Grid.Row="3" >0</TextBox>
+            <TextBox Name="mi5" TextChanged="moneyinput" Width="26" HorizontalAlignment="Left" Height="18" Grid.Column="1" Grid.Row="4" >0</TextBox>
+            <TextBox Name="mi6" TextChanged="moneyinput" Width="26" HorizontalAlignment="Left" Height="18" Grid.Column="1" Grid.Row="5" >0</TextBox>
+            <TextBox Name="mi7" TextChanged="moneyinput" Width="26" HorizontalAlignment="Left" Height="18" Grid.Column="1" Grid.Row="6" >0</TextBox>
+            <TextBox Name="mi8" TextChanged="moneyinput" Width="26" HorizontalAlignment="Left" Height="18" Grid.Column="1" Grid.Row="7" >0</TextBox>
+            <TextBox Name="mi9" TextChanged="moneyinput" Width="26" HorizontalAlignment="Left" Height="18" Grid.Column="1" Grid.Row="8" >0</TextBox>
+            <TextBox Name="mi10" TextChanged="moneyinput" Width="26" HorizontalAlignment="Left" Height="18" Grid.Column="1" Grid.Row="9" >0</TextBox>
+
+            <TextBlock HorizontalAlignment="Center" Height="18" Grid.Column="1" Grid.Row="0" >Keer</TextBlock>
+            <TextBlock HorizontalAlignment="Center" Height="18" Grid.Column="1" Grid.Row="1" >Keer</TextBlock>
+            <TextBlock HorizontalAlignment="Center" Height="18" Grid.Column="1" Grid.Row="2" >Keer</TextBlock>
+            <TextBlock HorizontalAlignment="Center" Height="18" Grid.Column="1" Grid.Row="3" >Keer</TextBlock>
+            <TextBlock HorizontalAlignment="Center" Height="18" Grid.Column="1" Grid.Row="4" >Keer</TextBlock>
+            <TextBlock HorizontalAlignment="Center" Height="18" Grid.Column="1" Grid.Row="5" >Keer</TextBlock>
+            <TextBlock HorizontalAlignment="Center" Height="18" Grid.Column="1" Grid.Row="6" >Keer</TextBlock>
+            <TextBlock HorizontalAlignment="Center" Height="18" Grid.Column="1" Grid.Row="7" >Keer</TextBlock>
+            <TextBlock HorizontalAlignment="Center" Height="18" Grid.Column="1" Grid.Row="8" >Keer</TextBlock>
+            <TextBlock HorizontalAlignment="Center" Height="18" Grid.Column="1" Grid.Row="9" >Keer</TextBlock>
+        </Grid>
+
+        <Border BorderThickness="1" BorderBrush="Black" Grid.Column="5" Grid.Row="1" Grid.RowSpan="9">
+            <TextBlock Grid.RowSpan="7" Name="winkelwagen" TextAlignment="Center" Background="LightGray" FontWeight="Bold" FontStyle="Oblique">Winkelwagen:</TextBlock>
+        </Border>
+        <TextBlock Grid.Row="9" Grid.Column="3" VerticalAlignment="Bottom">Totaalbedrag:</TextBlock>
+        <TextBlock Grid.Row="7" Grid.Column="3" VerticalAlignment="Bottom">Klantbedrag:</TextBlock>
+        <TextBlock Grid.Row="8" Grid.Column="3" VerticalAlignment="Bottom">Te betalen:</TextBlock>
+        <TextBlock Name="tbresult" Grid.Row="9" Grid.Column="3" VerticalAlignment="Bottom" HorizontalAlignment="Center">0.00</TextBlock>
+        <TextBlock Name="tbresultklant" Grid.Row="8" Grid.Column="3" VerticalAlignment="Bottom" HorizontalAlignment="Center">0.00</TextBlock>
+        <TextBlock Name="tbresultproduct" Grid.Row="7" Grid.Column="3" VerticalAlignment="Bottom" HorizontalAlignment="Center">0.00</TextBlock>
+
+
+        <Grid Grid.Row="1" Grid.Column="2" Grid.RowSpan="9">
+            <Border BorderThickness="1" BorderBrush="Black">
+                <TextBlock x:Name="producten" Background="LightGray" TextAlignment="Center" FontStyle="Oblique" FontWeight="Bold">Product:</TextBlock>
+            </Border>
+        </Grid>
+
+
+        <Grid Grid.Column="1" Grid.Row="4" Grid.RowSpan="9">
+            <TextBox x:Name="displayTextbox" HorizontalAlignment="Center" Height="49" Margin="0,10,0,0" TextWrapping="Wrap" Text="Off" VerticalAlignment="Top" Width="200"/>
+            <Button x:Name="onButton" Content="On" HorizontalAlignment="Left" Margin="3,63,0,0" VerticalAlignment="Top" Width="34" Click="FuncButton_Click" />
+            <Viewbox x:Name="buttonsbox" Margin="56,114,67,35" Stretch="Fill"/>
+            <Grid Margin="2,62,0,68">
+                <Button x:Name="oneButton" Content="1" HorizontalAlignment="Left" Margin="0,27,0,0" VerticalAlignment="Top" Width="34" Click="NumOpButton_Click" />
+                <Button x:Name="offButton" Content="Off" HorizontalAlignment="Left" Margin="39,0,0,0" VerticalAlignment="Top" Width="34" Click="FuncButton_Click" />
+                <Button x:Name="twoButton" Content="2" HorizontalAlignment="Left" Margin="39,27,0,0" VerticalAlignment="Top" Width="34" Click="NumOpButton_Click" />
+                <Button x:Name="threeButton" Content="3" HorizontalAlignment="Left" Margin="78,27,0,0" VerticalAlignment="Top" Width="34" Click="NumOpButton_Click" />
+                <Button x:Name="clearButton" Content="C" HorizontalAlignment="Left" Margin="78,0,0,0" VerticalAlignment="Top" Width="34" Click="FuncButton_Click" />
+                <Button x:Name="fourButton" Content="4" HorizontalAlignment="Left" Margin="0,54,0,0" VerticalAlignment="Top" Width="34" Click="NumOpButton_Click" />
+                <Button x:Name="fiveButton" Content="5" HorizontalAlignment="Left" Margin="39,54,0,0" VerticalAlignment="Top" Width="34" Click="NumOpButton_Click" />
+                <Button x:Name="sixButton" Content="6" HorizontalAlignment="Left" Margin="78,54,0,0" VerticalAlignment="Top" Width="34" Click="NumOpButton_Click" />
+                <Button x:Name="sevenButton" Content="7" HorizontalAlignment="Left" Margin="0,81,0,0" VerticalAlignment="Top" Width="34" Click="NumOpButton_Click" />
+                <Button x:Name="eightButton" Content="8" HorizontalAlignment="Left" Margin="39,81,0,0" VerticalAlignment="Top" Width="34" Click="NumOpButton_Click" />
+                <Button x:Name="nineButton" Content="9" HorizontalAlignment="Left" Margin="78,81,0,0" VerticalAlignment="Top" Width="34" Click="NumOpButton_Click" />
+                <Button x:Name="zeroButton" Content="0" HorizontalAlignment="Left" Margin="0,108,0,0" VerticalAlignment="Top" Width="73" Click="NumOpButton_Click" />
+                <Button x:Name="subButton" Content="-" HorizontalAlignment="Left" Margin="117,81,0,0" VerticalAlignment="Top" Width="34" Click="NumOpButton_Click" />
+                <Button x:Name="addButton" Content="+" HorizontalAlignment="Left" Margin="117,54,0,0" VerticalAlignment="Top" Width="34" Click="NumOpButton_Click" />
+                <Button x:Name="divButton" Content="/" HorizontalAlignment="Left" Margin="117,27,0,0" VerticalAlignment="Top" Width="34" Click="NumOpButton_Click" />
+                <Button x:Name="multButton" Content="*" HorizontalAlignment="Left" Margin="117,0,0,0" VerticalAlignment="Top" Width="34" Click="NumOpButton_Click" />
+                <Button x:Name="calcButton" Content="=" HorizontalAlignment="Left" Margin="117,108,0,0" VerticalAlignment="Top" Width="34" Click="calcButton_Click"/>
+                <Button x:Name="decPointButton" Content="." HorizontalAlignment="Left" Margin="78,108,0,0" VerticalAlignment="Top" Width="34" Click="NumOpButton_Click"/>
+            </Grid>
+        </Grid>
+
+    </Grid>
+</Window>

@@ -1,0 +1,22 @@
+C:\Users\samir\Desktop\Project 2\Project 2 WPF App\wpf app\wpf app\bin\Debug\netcoreapp3.1\wpf app.exe
+C:\Users\samir\Desktop\Project 2\Project 2 WPF App\wpf app\wpf app\bin\Debug\netcoreapp3.1\wpf app.deps.json
+C:\Users\samir\Desktop\Project 2\Project 2 WPF App\wpf app\wpf app\bin\Debug\netcoreapp3.1\wpf app.runtimeconfig.json
+C:\Users\samir\Desktop\Project 2\Project 2 WPF App\wpf app\wpf app\bin\Debug\netcoreapp3.1\wpf app.runtimeconfig.dev.json
+C:\Users\samir\Desktop\Project 2\Project 2 WPF App\wpf app\wpf app\bin\Debug\netcoreapp3.1\wpf app.dll
+C:\Users\samir\Desktop\Project 2\Project 2 WPF App\wpf app\wpf app\bin\Debug\netcoreapp3.1\wpf app.pdb
+C:\Users\samir\Desktop\Project 2\Project 2 WPF App\wpf app\wpf app\obj\Debug\netcoreapp3.1\MainWindow.g.cs
+C:\Users\samir\Desktop\Project 2\Project 2 WPF App\wpf app\wpf app\obj\Debug\netcoreapp3.1\App.g.cs
+C:\Users\samir\Desktop\Project 2\Project 2 WPF App\wpf app\wpf app\obj\Debug\netcoreapp3.1\wpf app_MarkupCompile.cache
+C:\Users\samir\Desktop\Project 2\Project 2 WPF App\wpf app\wpf app\obj\Debug\netcoreapp3.1\wpf app_MarkupCompile.lref
+C:\Users\samir\Desktop\Project 2\Project 2 WPF App\wpf app\wpf app\obj\Debug\netcoreapp3.1\MainWindow.baml
+C:\Users\samir\Desktop\Project 2\Project 2 WPF App\wpf app\wpf app\obj\Debug\netcoreapp3.1\wpf app.g.resources
+C:\Users\samir\Desktop\Project 2\Project 2 WPF App\wpf app\wpf app\obj\Debug\netcoreapp3.1\wpf app.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\samir\Desktop\Project 2\Project 2 WPF App\wpf app\wpf app\obj\Debug\netcoreapp3.1\wpf app.AssemblyInfoInputs.cache
+C:\Users\samir\Desktop\Project 2\Project 2 WPF App\wpf app\wpf app\obj\Debug\netcoreapp3.1\wpf app.AssemblyInfo.cs
+C:\Users\samir\Desktop\Project 2\Project 2 WPF App\wpf app\wpf app\obj\Debug\netcoreapp3.1\wpf app.csproj.CoreCompileInputs.cache
+C:\Users\samir\Desktop\Project 2\Project 2 WPF App\wpf app\wpf app\obj\Debug\netcoreapp3.1\wpf app.dll
+C:\Users\samir\Desktop\Project 2\Project 2 WPF App\wpf app\wpf app\obj\Debug\netcoreapp3.1\wpf app.pdb
+C:\Users\samir\Desktop\Project 2\Project 2 WPF App\wpf app\wpf app\obj\Debug\netcoreapp3.1\wpf app.genruntimeconfig.cache
+C:\Users\samir\Desktop\Project 2\Project 2 WPF App\wpf app\wpf app\bin\Debug\netcoreapp3.1\afb\background.png
+C:\Users\samir\Desktop\Project 2\Project 2 WPF App\wpf app\wpf app\obj\Debug\netcoreapp3.1\wpf app_Content.g.cs
+C:\Users\samir\Desktop\Project 2\Project 2 WPF App\wpf app\wpf app\obj\Debug\netcoreapp3.1\wpf app.csproj.AssemblyReference.cache
